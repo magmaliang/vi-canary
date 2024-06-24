@@ -1,0 +1,32 @@
+{
+  "name": "vica",
+  "version": "0.2.3",
+  "description": "",
+  "main": "./script/vica.js",
+  "files": [
+    "node_modules",
+    "workspace",
+    "script",
+    "readme.md"
+  ],
+  "scripts": {
+    "pub": "npm publish --access=public --registry https://registry.npmjs.org/",
+    "sync": "cnpm sync vica | open https://npm.taobao.org/sync/vica",
+    "cnpm_install": "npm install -g cnpm -registry=https://registry.npm.taobao.org",
+    "vicax": "./script/vica.js react"
+  },
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "vica": "./script/vica.js"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.14",
+    "axios": "^1.7.2",
+    "chalk": "^4.0.1",
+    "figlet": "^1.5.2",
+    "inquirer": "^8.0.2",
+    "npm-pkg-api": "^0.0.1",
+    "shelljs": "^0.8.5"
+  }
+}

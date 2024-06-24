@@ -1,0 +1,34 @@
+{
+  "name": "tsx_workspace",
+  "version": "1.0.0",
+  "description": "typescript + react + sass/less + webpack5",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config ./build/webpack.dev.js",
+    "build": "webpack --config ./build/webpack.product.js"
+  },
+  "author": "",
+  "dependencies": {
+    "@types/react": "^16.9.7",
+    "@types/react-dom": "^16.9.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "super-trace": "^0.0.9"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/lodash": "^4.14.182",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "sass": "^1.54.4",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.3.1",
+    "tsconfig-paths-webpack-plugin": "^3.5.2",
+    "typescript": "^4.7.4",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3",
+    "webpack-merge": "^5.8.0"
+  }
+}

@@ -1,0 +1,56 @@
+.neo-grid-layout-container.design {
+  >div:hover {
+    outline: 2px dashed #31d8ce;
+  }
+  background-color: #ddd;
+}
+
+.neo-grid-layout-container>div {
+  position: relative;
+}
+
+.grid-place-holder {
+  z-index: 1;
+  background-color: #fff;
+  height: 100%;
+  &.drag-overed {
+    background-color: rgb(247, 120, 46);
+  }
+}
+
+.neo-layout-grid-item {
+  z-index: 2;
+}
+
+.neo-proxy-wrapper {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.focused {
+  cursor: move;
+  &::after {
+    display: block;
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    background:#31d8ce;
+    opacity: 0.2;
+    top:0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+}
+
+.vCenter {
+  display: flex;
+  align-items: center;
+}
+
+.hCenter {
+  display: flex;
+  justify-content: center;
+}
